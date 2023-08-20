@@ -4,17 +4,29 @@ import Home from "./components/Home";
 import Navbar from "./components/Navbar";
 import Skills from "./components/Skills";
 import Work from "./components/Work";
+import {Route, Routes, useLocation} from 'react-router-dom'
 
+// import React, {useEffect} from 'react';
 
 function App() {
     return (
         <div>
             <Navbar/>
-            <Home/>
-            <About/>
-            <Skills/>
-            <Work/>
-            <Contact/>
+            <div id="home">
+                <Home/>
+            </div>
+            <div id="about">
+                <About/>
+            </div>
+            <div id="skills">
+                <Skills/>
+            </div>
+            <div id="projects">
+                <Work/>
+            </div>
+            <div id="contact">
+                <Contact/>
+            </div>
         </div>
     );
 }
