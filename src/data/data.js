@@ -1,35 +1,27 @@
-import WorkIm from '../assets/projects/workImg.jpeg'
-import RealEst from '../assets/projects/realestate.jpg'
+import Broom from '../assets/projects/Broom.png'
+import Binote from '../assets/projects/binote.png'
+import Datalake from '../assets/projects/datalake.png'
 
-export const data=[
+export const data = [
     {
-        id:1,
-        name:"React JS Application",
-        image:WorkIm,
-        github:"",
-        live:"",
+        id: 1,
+        name: "Broom",
+        image: Broom,
+        github: "",
+        live: "",
     },
     {
-        id:2,
-        name:"React JS Application",
-        image:RealEst,
-        github:"",
-        live:"",
+        id: 2,
+        name: "Bi-note",
+        image: Binote,
+        github: "",
+        live: "",
     },
     {
-        id:3,
-        name:"React JS Application",
-        image:WorkIm,
-        github:"",
-        live:"",
+        id: 3,
+        name: "VDPv2-Viettel data lake",
+        image: Datalake,
+        github: "",
+        live: "",
     },
-    {
-        id:4,
-        name:"React JS Application",
-        image:RealEst,
-        github:"",
-        live:"",
-    },
-
-
 ]
