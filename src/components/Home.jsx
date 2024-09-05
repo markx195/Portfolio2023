@@ -1,6 +1,16 @@
 import React from 'react';
-import {HiArrowNarrowRight} from 'react-icons/hi';
-import {TypeAnimation} from "react-type-animation";
+import { HiArrowNarrowRight } from 'react-icons/hi';
+import { TypeAnimation } from "react-type-animation";
+
+function scrollToSection(sectionId) {
+    const section = document.getElementById(sectionId);
+    if (section) {
+        window.scrollTo({
+            top: section.offsetTop,
+            behavior: 'smooth'
+        });
+    }
+}
 
 const Home = () => {
     return (
@@ -12,7 +22,7 @@ const Home = () => {
                     Quang Anh
                 </h1>
                 <h2 className='text-4xl sm:text-7xl font-bold text-[#8892b0]'>
-                    <TypeAnimation cursor={true} sequence={['I\'m a Frontend Developer.']} wrapper="span"/>
+                    <TypeAnimation cursor={true} sequence={['I\'m a Frontend Developer.']} wrapper="span" />
                 </h2>
                 <p className='text-[#8892b0] py-4 max-w-[700px]'>
                     I’m a frontend developer specializing in building (and occasionally
@@ -21,11 +31,13 @@ const Home = () => {
                 </p>
                 <div>
                     <button
-                        className='text-white group border-2 px-6 py-3 my-2 flex items-center hover:bg-pink-600 hover:border-pink-600'>
+                        className='text-white group border-2 px-6 py-3 my-2 flex items-center hover:bg-pink-600 hover:border-pink-600'
+                        onClick={() => scrollToSection('projects')}
+                    >
                         View Work
                         <span className='group-hover:rotate-90 duration-300'>
-              <HiArrowNarrowRight className='ml-3 '/>
-            </span>
+                            <HiArrowNarrowRight className='ml-3 ' />
+                        </span>
                     </button>
                 </div>
             </div>
